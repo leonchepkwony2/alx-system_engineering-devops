@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# Connects to server 54.172.59.39 with private key in ~/.ssh/school
+server="54.172.59.39"
+
+# Specify the private key file
+private_key="~/.ssh/school"
+
+# Specify the username
+user="ubuntu"
+
+# SSH connection using single-character flags
+ssh -i "$private_key" "$user"@"$server"
